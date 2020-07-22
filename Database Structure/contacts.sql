@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 22, 2020 at 02:55 AM
+-- Generation Time: Jul 22, 2020 at 09:29 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.31
 
@@ -34,6 +34,14 @@ CREATE TABLE `contactdata` (
   `Address` varchar(1000) NOT NULL,
   `CustomerMail` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contactdata`
+--
+
+INSERT INTO `contactdata` (`ID`, `Name`, `MobileNo`, `Address`, `CustomerMail`) VALUES
+(1, 'Shivansh Pagare', '7999735633', '02, Near Moghat Police Station Moghat Road, Khandwa(M.P.) 450001', 'shivanshpagare97@gmail.com'),
+(2, 'Dharmendra Pagare', '9827302680', '02, Near Moghat Police Station Moghat Road, Khandwa(M.P.) 450001', 'shivanshpagare97@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -79,7 +87,7 @@ ALTER TABLE `customer`
 -- AUTO_INCREMENT for table `contactdata`
 --
 ALTER TABLE `contactdata`
-  MODIFY `ID` int(7) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `customer`

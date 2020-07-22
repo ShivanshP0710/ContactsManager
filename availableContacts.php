@@ -46,12 +46,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <?php
-                                    // output data of each row
-                                    while($row = mysqli_fetch_assoc($result)) 
+                            <?php
+                                // output data of each row
+                                while($row = mysqli_fetch_assoc($result)) 
                                     {
-                                ?>
+                            ?>
+                                <tr>
+                                
                                     <td><?php echo $row["ID"] ?></td>
                                     <td><?php echo $row["Name"] ?></td>
                                     <td><?php echo $row["MobileNo"] ?></td>
@@ -67,11 +68,11 @@
                                             <button name="cDelete" type="submit" class="btn btn-danger">Delete</button>
                                             <input type="hidden" name="cId" value="<?php echo $row["ID"] ?>">
                                         </form>
-                                    </td>                              
-                                <?php 
-                                    }
-                                ?>
-                            </tr>
+                                    </td>
+                                </tr>                              
+                            <?php 
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>

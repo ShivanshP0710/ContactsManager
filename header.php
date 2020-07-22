@@ -30,13 +30,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-10">
                     <nav class="header__menu">
                         <ul>
                             <?php
                                 if(isset($_SESSION["sessionCEmail"])){
                             ?>                            
                                 <li><a href="./addContacts.php">Add New Contact</a></li>
+                                <li><a href="./bulkContactsExcel.php">Add Contacts in Bulk</a></li>
                                 <li><a href="./availableContacts.php">Available Contacts</a></li>
                                 <li><a href="./logout.php">LogOut</a></li>
                             <?php 
